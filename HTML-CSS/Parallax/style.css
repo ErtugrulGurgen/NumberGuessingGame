@@ -1,0 +1,130 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem; 
+    /* font size 20px yaparsak 1 rem 20pxle eşit olur */
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+    font-weight: 400;
+    height: 100%;
+}
+.bg-cont-img1{
+    background-image: url(./img/bg.jpg);
+    min-height: 100%;
+}
+.bg-cont-img2{
+    background-image: url(./img/bg2.jpg);
+    min-height: 80%;
+}
+.bg-cont-img3{
+    background-image: url(./img/bg3.jpg);
+    min-height: 80%;
+}
+.bg-cont-img4{
+    background-image: url(./img/bg4.jpg);
+    min-height: 80%;
+}
+.bg-cont-img1,
+.bg-cont-img2,
+.bg-cont-img3,
+.bg-cont-img4{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* to-do parallax effect  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+
+}
+.heading-container{
+    text-align: center;
+    /* text-align: center; çalışması için width: 100% verilmesi lazım */
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5rem;
+}
+.span-heading{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: rgb(94, 6, 94) 0.5rem inset;
+    outline-offset: 1rem;
+    
+}
+.heading-container-logo{
+    width: 30%;
+}
+.span-text{
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    /* text-transform: capitalize;     */
+    border-radius: 0.7rem 0rem 0.7rem 0rem;
+    outline: purple 0.4rem inset;
+    outline-offset: 0.2rem;
+}
+.container{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.container-light{
+    background-color: #f1f1f1 ;
+    color: #666666;
+    line-height: 1.8rem
+}
+.container-dark{
+    background-color: #282E34;
+    color: #ddd;
+    line-height: 1.8rem;
+}
+@media(max-width:768px){
+    .heading-container{
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    .span-heading{
+        padding: 0.7rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        outline: 0.5rem inset purple;
+        outline-offset: 1rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:500px){
+    .bg-cont-img1,.bg-cont-img2,.bg-cont-img3,.bg-cont-img4{
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .bg-cont-img1, .bg-cont-img2, .bg-cont-img3,.bg-cont-img4{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+} */
