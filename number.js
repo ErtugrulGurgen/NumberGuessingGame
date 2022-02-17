@@ -8,6 +8,7 @@ let outputById = document.getElementById("output");
 let img1ById = document.getElementById("fireworks1");
 let img2ById = document.getElementById("fireworks2")
 let formById = document.getElementById("form");
+let newGameById = document.getElementById("new-game");
 let counter = 0;
 let result = Math.floor(Math.random() * 100);
 
@@ -27,6 +28,7 @@ submitById.addEventListener("click", () => {
     img1ById.style.display = "inline";
     img2ById.style.display = "inline";
     formById.style.display = "none";
+    newGameById.style.display = "inline";
   } else if (guess < result && guess>rangeMin) {
     rangeMinById.innerHTML = guessValue;
     counter++;
@@ -38,6 +40,9 @@ submitById.addEventListener("click", () => {
   } else{
       counter++;
   }
+  newGameById.addEventListener("click", ()=>{
+  location.reload();
+})
   console.log(guess < result);
   attemptsById.innerHTML = counter;
 });
