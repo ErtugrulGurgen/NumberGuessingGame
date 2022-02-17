@@ -30,9 +30,11 @@ submitById.addEventListener("click", () => {
   } else if (guess < result && guess>rangeMin) {
     rangeMinById.innerHTML = guessValue;
     counter++;
+    guessById.value = "";
   } else if(guess > result && guess<rangeMax){
     rangeMaxById.innerHTML = guessValue;
     counter++;
+    guessById.value = "";
   } else{
       counter++;
   }
