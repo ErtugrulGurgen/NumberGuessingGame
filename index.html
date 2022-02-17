@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inputArea">
+      <header>
+        Guess The Number (<span id="rangeMin">1</span> -
+        <span id="rangeMax">100</span>)
+      </header>
+      <h2 id="enter">Enter a number</h2>
+      <div class="input" id="form">
+        <input type="text" id="guess" class="guess" />
+        <br />
+        <button type="submit" id="submit" class="submit">Check</button>
+      </div>
+      <h2 id="output" class="congrats"></h2>
+      <p>Number of attempts: <span id="attempt"></span></p>
+    </div>
+    <div id="fworks">
+      <img
+        src="./images/fireworks-gif.gif"
+        alt="fireworks"
+        class="fireworks1"
+        id="fireworks1"
+        style="display: none"
+      />
+      <img
+        src="./images/fireworks-gif.gif"
+        alt="fireworks"
+        class="fireworks2"
+        id="fireworks2"
+        style="display: none"
+      />
+    </div>
+    <script src="number.js"></script>
+  </body>
+</html>

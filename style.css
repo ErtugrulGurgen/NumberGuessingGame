@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./images/bg1.jpg);
+}
+header {
+  margin: 10% 0 2% 36%;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+.guess {
+  margin: 0 0 0 43%;
+  width: 150px;
+  height: 20px;
+}
+.submit {
+  margin: 2% 0 0 47%;
+  color: white;
+  background-color: rgb(56, 56, 201);
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2{
+    color: white;
+    margin: 3% 0 3% 40.5%;
+    font-size: 2rem;
+}
+p{
+    color: white;
+    margin: 0 0 0 44%;
+}
+.congrats{
+  color: white;
+    margin: 3% 0 3% 44%;
+    font-size: 2rem;
+}
+.fireworks1{
+  width: 350px;
+  height: 200px;
+  margin-top: -10%;
+}
+.fireworks2{
+  padding-left: 560px;
+  width: 350px;
+  height: 200px;
+}
